@@ -10,7 +10,7 @@ class DBBuilder {
     {
         if ($delete){
             $this->removeTables();
-            die("clear your database");
+            die("Your database has been successfully reset");
         }
 
         $this->createTables();

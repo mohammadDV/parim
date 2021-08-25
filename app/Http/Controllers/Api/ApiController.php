@@ -187,7 +187,7 @@ class ApiController extends Controller {
         $tables = new DBBuilder();
     }
 
-    public function remove()
+    public function reset()
     {
         //! empty database
         $tables = new DBBuilder(true);
