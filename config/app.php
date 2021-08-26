@@ -1,6 +1,6 @@
 <?php
 return [
-    "APP_KEY"       => "0ec19e8351b1dea39538f4e1ace5e73e",
+    "APP_KEY"       => "0ec19e8351b1dea39538f4e1ace5e734",
     "MODE"          => "1",
     "VERSION"       => "0.1.0",
     "APP_TITLE"     => "Parim project",

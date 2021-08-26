@@ -150,8 +150,8 @@ class ApiController extends Controller {
             jsonResponse($data);
         }catch (\Exception $e){
             new Exp($e->getMessage(),$e->getCode());
-            jsonResponse(3,$e->getMessage());
-//            jsonResponse(3,__tr("The system has a problem. Please try again"));
+//            jsonResponse(3,$e->getMessage());
+            jsonResponse(3,__tr("The system has a problem. Please try again"));
         }
     }
 
