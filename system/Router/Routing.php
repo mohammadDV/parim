@@ -13,7 +13,7 @@ class Routing {
     public function __construct()
     {
         $this->current_route    = explode("/",Config::get('app.CURRENT_ROUTE'));
-        $this->method_field    = $this->method_field();
+        $this->method_field     = $this->method_field();
         global $gl_routes;
         $this->routes           = $gl_routes;
     }
@@ -25,7 +25,7 @@ class Routing {
             $this->notfound();
         }
         $classPath  = str_replace("\\","/",$match["class"]);
-        $path       = Config::get('app.BASE_DIR') . "/App/http/controllers/" . $classPath . ".php";
+        $path       = Config::get('app.BASE_DIR') . "/app/Http/Controllers/" . $classPath . ".php";
         if (!file_exists($path)){
             throw new Exp("not found class");
         }
